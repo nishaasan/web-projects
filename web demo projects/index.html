@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Showcase</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>HTML Elements Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#text">Text</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#lists">Lists</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="text">
+            <h2 >Text Elements</h2>
+            <p>This is a paragraph (<code>&lt;p&gt;</code>).</p>
+            <p>This is a <strong>strong</strong> element.</p>
+            <p>This is an <em>emphasized</em> element.</p>
+            <blockquote>
+                This is a blockquote element. It is used to quote large sections of text from another source.
+            </blockquote>
+            <pre>
+This is a preformatted text element. 
+Whitespace and line breaks are preserved.
+            </pre>
+            <code>
+&lt;code&gt;This is a code element.&lt;/code&gt;
+            </code>
+        </section>
+
+        <section id="media">
+            <h2>Media Elements</h2>
+            <img src="https://via.placeholder.com/150" alt="Sample Image">
+            <figcaption>This is a caption for the image above.</figcaption>
+            <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video controls width="320" height="240">
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <section id="forms">
+            <h2>Form Elements</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color">
+                
+                <label for="range">Range:</label>
+                <input type="range" id="range" name="range" min="0" max="100">
+                
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Hobbies:</legend>
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                    <label for="traveling">Traveling</label>
+                    <input type="checkbox" id="coding" name="hobbies" value="coding">
+                    <label for="coding">Coding</label>
+                </fieldset>
+                
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select>
+                
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="tables">
+            <h2>Table Elements</h2>
+            <table>
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>25</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>30</td>
+                        <td>Los Angeles</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">End of table</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="lists">
+            <h2>List Elements</h2>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+
+            <h3>Definition List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Elements Showcase</p>
+    </footer>
+</body>
+</html>
